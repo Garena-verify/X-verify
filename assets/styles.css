@@ -1,0 +1,84 @@
+@media only screen and (max-width: 720px) {
+    body {
+        background: black;
+    }
+
+    .form-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* keep this to center the form container */
+        width: 70%;
+        padding: 10px;
+        box-sizing: border-box;
+        position: relative;
+        margin: 0 auto; /* add this to center the form container horizontally */
+    }
+
+    .form-group {
+        text-align: center; /* add this to center the form group */
+    }
+
+    .form-group label {
+        margin-bottom: 2.5px;
+        font-size: 20px; /* increase the font size to 20px */
+    }
+
+    .mail-input, .pass-input {
+        position: relative;
+        width: 350px;
+        max-width: 350px; /* increase max-width to make input fields wider */
+        padding: 15px 30px; /* increase padding to make input fields taller */
+        border: 0.5px solid #ccc;
+        border-radius: 4px;
+        font-size: 15px; /* increase the font size to 20px */
+        box-sizing: border-box;
+        margin-bottom: 5px;
+        height: 70px; /* increase height to make input fields taller */
+    }
+
+    .submit-button {
+        position: relative;
+        top: 10px;
+        max-width: 350px; /* increase max-width to make button wider */
+        width: 350px;
+        padding: 15px 30px; /* increase padding to make button taller */
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        border: none;
+        border-radius: 2000px;
+        font-size: 15px; /* increase the font size to 20px */
+        cursor: pointer;
+        margin-top: 5px;
+        height: 50px; /* increase height to make button taller */
+    }
+
+    .x-icon-container {
+        width: 70%;
+        text-align: center;
+        margin-bottom: 10px;
+        margin: 0 auto; /* add this to center the icon container horizontally */
+    }
+
+    .x-icon {
+        font-size: 20px; /* increase the font size to 20px */
+        color: #333;
+        margin: 0 auto;
+    }
+    .google-icon {
+        display: inline-block; /* keep display inline-block to align with text */
+        width: 60px; /* keep width at 60px */
+        height: 60px;
+        margin-right: 10px; /* keep margin to separate from the text */
+        vertical-align: middle; /* keep vertical alignment */
+    }
+    
+    .google {
+        display: flex; /* keep display flex to align the icon and text horizontally */
+        align-items: center; /* keep vertical alignment */
+        max-width: 350px; /* keep max-width at 350px */
+        /* Add new styles here */
+        font-size: 20px; /* increase font size to 20px */
+        font-weight: bold; /* make the text bold */
+        color: #333; /* change text color to #333 */
+    }
+}

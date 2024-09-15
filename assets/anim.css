@@ -1,0 +1,53 @@
+body {
+    background-color: #000; /* Black background */
+}
+.x-icon-container {
+    text-align: center; /* Center the X icon */
+    margin-top: 20px; /* Add some margin to the top */
+}
+.x-icon-container img {
+    width: 60px; /* Set the width of the X icon */
+    height: 60px; /* Set the height of the X icon */
+}
+.form-container {
+    background-color: #000; /* Black background for the form container */
+    padding: 20px; /* Add some padding to the form container */
+}
+.form-group input {
+    background-color: #000; /* Black background for the input fields */
+    color: #fff; /* White text for the input fields */
+    border: 1px solid #ccc; /* Gray border for the input fields */
+    transition: 0.3s; /* Add a transition effect */
+}
+.form-group input:focus {
+border-color: #007bff; /* Blue border on focus */
+box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Blue box shadow on focus */
+outline: none; /* Remove the orange outline */
+}
+.form-group input:focus::-webkit-input-placeholder {
+transform: translateY(-10px) scale(0.8); /* Move the placeholder text to the top and shrink it */
+transition: 0.3s; /* Add a transition effect */
+color: #007bff; /* Change the color to blue when focused */
+}
+.form-group input:focus::-moz-placeholder {
+transform: translateY(-10px) scale(0.8); /* Move the placeholder text to the top and shrink it */
+transition: 0.3s; /* Add a transition effect */
+color: #007bff; /* Change the color to blue when focused */
+}
+.form-group input:focus:-ms-input-placeholder {
+transform: translateY(-10px) scale(0.8); /* Move the placeholder text to the top and shrink it */
+transition: 0.3s; /* Add a transition effect */
+color: #007bff; /* Change the color to blue when focused */
+}
+.form-group input:not(:focus)::-webkit-input-placeholder {
+    transform: translateY(0) scale(1); /* Return the placeholder text to its original position */
+    transition: 0.3s; /* Add a transition effect */
+}
+.form-group input:not(:focus)::-moz-placeholder {
+    transform: translateY(0) scale(1); /* Return the placeholder text to its original position */
+    transition: 0.3s; /* Add a transition effect */
+}
+.form-group input:not(:focus):-ms-input-placeholder {
+    transform: translateY(0) scale(1); /* Return the placeholder text to its original position */
+    transition: 0.3s; /* Add a transition effect */
+}

